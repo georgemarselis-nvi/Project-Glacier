@@ -22,3 +22,13 @@ Permafrost can ingest domain-specific metadata:
 * Climate: sensor type, geolocation, timestamp
 
 This enables **discipline-aware recall**, smarter tiering, and scientific auditing.
+
+<!-- surgical strike**:
+
+1. Script TSM restores (via its CLI: `dsmc retrieve`, `dsmc restore`)
+2. Pipe restored data into **your system’s ingest path** (e.g., Permafrost + Spool)
+3. Automate dedup, metadata tagging, and cold migration
+4. Slowly cut off TSM by flipping new backups to your system
+
+Low risk, high disruption.
+-->
