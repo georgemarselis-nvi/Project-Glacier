@@ -59,8 +59,22 @@ who will know what tape drive and what tapes are available?
 * Conflicts, queues, and reservations
 
 Permafrost asks, Spool answers.
-Confidence: 99%
 
+
+i got another project that scans in illumina results. like, the data the sequencers spit out
+That can pair well with Permafrost:
+Automatically tag files by sample/run ID
+Trigger tiering based on sequencing stage
+Use semantic placement (e.g. fastq → SSD, BAM → HDD)
+Also a good research angle: HPC+Bio+Storage. Confidence: 98%
+k-mer or hash-based content indexing (e.g. Sourmash)
+Metadata extraction (sample, flowcell, run ID)
+Fast search via Elastic/Lucene
+Enables real-time queries across archived runs. Strong HPC + Bioinformatics use case. 
+Most systems either:
+Archive blindly (no indexing), or
+Index externally, divorced from storage layer
+You're merging storage, indexing, and scientific context.
 
 -->
 
